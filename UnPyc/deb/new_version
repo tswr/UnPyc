@@ -1,0 +1,15 @@
+deb/mkdeb_core
+	name=unpyc_0.20_all
+deb/DEBIAN/control
+	Version: 0.20
+doc/info/README
+	0.20
+sources/unpyclib/application.py:
+	__version__ = '0.20'
+	...
+	UnPyc v0.20 (testing)
+sources/unpyclib/__init__.py:
+	__version__ = '0.20'
+sources/setup.py:
+	version="0.20",
+

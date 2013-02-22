@@ -1,0 +1,473 @@
+___ 01.py ___
+___ 02.py ___
+1,2c1,6
+< a = 1; b = 2
+< (a, b) = (b, a)
+---
+> # --== Decompile ==--
+> a = 1
+> b = 2
+> a = b
+> b = a
+> 
+___ 03.py ___
+0a1
+> # --== Decompile ==--
+2c3,6
+< (a, a, a) = (a, a, a)
+---
+> a = a
+> a = a
+> a = a
+> 
+___ 04.py ___
+___ 05.py ___
+___ 0A.py ___
+___ 0B.py ___
+___ 0C.py ___
+___ 0D.py ___
+___ 0F.py ___
+___ 12.py ___
+>>> Warning: Decompilation finished with nonempty stack:
+	[]
+	_[1]
+1c1,6
+< a = [i*i for i in (1,2)]
+---
+> # --== Decompile ==--
+> _[1] = []
+> i = (1, 2)
+> del _[1]
+> a = (i) * (i)
+> 
+___ 13.py ___
+___ 14.py ___
+___ 15.py ___
+___ 16.py ___
+___ 17.py ___
+___ 18.py ___
+___ 19.py ___
+___ 1A.py ___
+___ 1B.py ___
+___ 1C.py ___
+___ 1D.py ___
+___ 1E.py ___
+___ 1F.py ___
+___ 20.py ___
+___ 21.py ___
+___ 28.py ___
+___ 29.py ___
+___ 2A.py ___
+___ 2B.py ___
+___ 32.py ___
+___ 33.py ___
+___ 34.py ___
+___ 35.py ___
+___ 37.py ___
+___ 38.py ___
+___ 39.py ___
+___ 3A.py ___
+___ 3B.py ___
+___ 3C.py ___
+___ 3D.py ___
+___ 3E.py ___
+___ 3F.py ___
+___ 40.py ___
+___ 41.py ___
+___ 42.py ___
+___ 43.py ___
+___ 44.py ___
+1c1,3
+< for a in (1,2): pass
+---
+> # --== Decompile ==--
+> a = (1, 2)
+> 
+___ 47.py ___
+___ 48.py ___
+___ 49.py ___
+4d3
+< sys.stdout
+___ 4A.py ___
+___ 4B.py ___
+___ 4C.py ___
+___ 4D.py ___
+___ 4E.py ___
+___ 4F.py ___
+___ 50.py ___
+1c1,4
+< for a in (1,2): break
+---
+> # --== Decompile ==--
+> a = (1, 2)
+> break
+> 
+___ 51.py ___
+>>> Warning: Decompilation finished with nonempty stack:
+	None
+	_[1]
+0a1
+> # --== Decompile ==--
+1a3,8
+> _[1] = open('1.txt').__exit__
+> _[2] = open('1.txt').__enter__()
+> del _[2]
+> f = _[2]
+> print f.read()
+> del _[1]
+3,4d9
+< with open("1.txt") as f:
+<         print f.read()
+___ 52.py ___
+___ 53.py ___
+___ 54.py ___
+___ 55.py ___
+___ 56.py ___
+___ 57.py ___
+1c1,4
+< for a in (1,2): break
+---
+> # --== Decompile ==--
+> a = (1, 2)
+> break
+> 
+___ 58.py ___
+>>> Decompilation broken:
+>>> exception: list index out of range
+>>> stack trace: 
+  File "/media/knowledge/ntfs/development/dev/unpyc/unpyc/current/UnPycLib/Decompile.py", line 237, in codeDecompile
+    stack.append(stack[-1])
+>>> decompilation state info:
+  co.name = <module>
+  lastoffset = 00000010
+  lastcommand = DUP_TOP
+  lastargument = None
+
+>>> decompilation stack info:
+
+1,6c1
+< try:
+<         a = 1
+< except ValueError:
+<         a = 2
+< finally:
+<         a = 3
+---
+> # --== Decompile ==--
+___ 59.py ___
+___ 5A.py ___
+___ 5B.py ___
+___ 5C.py ___
+>>> Decompilation broken:
+>>> exception: list index out of range
+>>> stack trace: 
+  File "/media/knowledge/ntfs/development/dev/unpyc/unpyc/current/UnPycLib/Decompile.py", line 516, in codeDecompile
+    r += self.STORE(stack[-1], cmd.argument, self.co.names, currentIndent)
+>>> decompilation state info:
+  co.name = <module>
+  lastoffset = 00000009
+  lastcommand = STORE_NAME
+  lastargument = 1
+
+>>> decompilation stack info:
+
+1c1
+< (a, b) = "ab"
+---
+> # --== Decompile ==--
+___ 5D.py ___
+1c1,3
+< for i in (1,2): pass
+---
+> # --== Decompile ==--
+> i = (1, 2)
+> 
+___ 5F.py ___
+___ 60.py ___
+___ 61.py ___
+>>> Warning: Decompilation finished with nonempty stack:
+	1
+1,2c1,2
+< global a
+< a = 1
+---
+> # --== Decompile ==--
+> 
+___ 62.py ___
+1,2c1,2
+< global a
+< del a
+---
+> # --== Decompile ==--
+> 
+___ 63.py ___
+0a1
+> # --== Decompile ==--
+3c4,5
+< b[a] += 1
+---
+> b[a] = b[a] += 1
+> 
+___ 64.py ___
+___ 65.py ___
+___ 66.py ___
+___ 67.py ___
+___ 68.py ___
+1c1,3
+< {"a":1,"b":2}
+---
+> # --== Decompile ==--
+> {'b': 2, 'a': 1}
+> 
+___ 69.py ___
+___ 6A.py ___
+___ 6B.py ___
+___ 6C.py ___
+___ 6E.py ___
+>>> Decompilation broken:
+>>> exception: pop from empty list
+>>> stack trace: 
+  File "/media/knowledge/ntfs/development/dev/unpyc/unpyc/current/UnPycLib/Decompile.py", line 218, in codeDecompile
+    o = stack.pop()
+>>> decompilation state info:
+  co.name = <module>
+  lastoffset = 00000010
+  lastcommand = POP_TOP
+  lastargument = None
+
+>>> decompilation stack info:
+
+1,2c1
+< if 1 == 2: pass
+< else: pass
+---
+> # --== Decompile ==--
+___ 6F.py ___
+>>> Decompilation broken:
+>>> exception: pop from empty list
+>>> stack trace: 
+  File "/media/knowledge/ntfs/development/dev/unpyc/unpyc/current/UnPycLib/Decompile.py", line 218, in codeDecompile
+    o = stack.pop()
+>>> decompilation state info:
+  co.name = <module>
+  lastoffset = 00000010
+  lastcommand = POP_TOP
+  lastargument = None
+
+>>> decompilation stack info:
+
+1,2c1
+< if 1 == 2: pass
+< else: pass
+---
+> # --== Decompile ==--
+___ 70.py ___
+>>> Decompilation broken:
+>>> exception: pop from empty list
+>>> stack trace: 
+  File "/media/knowledge/ntfs/development/dev/unpyc/unpyc/current/UnPycLib/Decompile.py", line 218, in codeDecompile
+    o = stack.pop()
+>>> decompilation state info:
+  co.name = <module>
+  lastoffset = 00000010
+  lastcommand = POP_TOP
+  lastargument = None
+
+>>> decompilation stack info:
+
+1,2c1
+< if not(1 == 2): pass
+< else: pass
+---
+> # --== Decompile ==--
+___ 71.py ___
+1c1,3
+< for i in (1,2): pass
+---
+> # --== Decompile ==--
+> i = (1, 2)
+> 
+___ 74.py ___
+>>> Warning: Decompilation finished with nonempty stack:
+	1
+	a
+1,3c1,2
+< global a
+< a = 1
+< a = a
+---
+> # --== Decompile ==--
+> 
+___ 77.py ___
+>>> Decompilation broken:
+>>> exception: pop from empty list
+>>> stack trace: 
+  File "/media/knowledge/ntfs/development/dev/unpyc/unpyc/current/UnPycLib/Decompile.py", line 218, in codeDecompile
+    o = stack.pop()
+>>> decompilation state info:
+  co.name = <module>
+  lastoffset = 00000017
+  lastcommand = POP_TOP
+  lastargument = None
+
+>>> decompilation stack info:
+
+1,3c1
+< for x in (1,2):
+<         try: continue
+<         except: pass
+---
+> # --== Decompile ==--
+___ 78.py ___
+>>> Decompilation broken:
+>>> exception: pop from empty list
+>>> stack trace: 
+  File "/media/knowledge/ntfs/development/dev/unpyc/unpyc/current/UnPycLib/Decompile.py", line 218, in codeDecompile
+    o = stack.pop()
+>>> decompilation state info:
+  co.name = <module>
+  lastoffset = 00000013
+  lastcommand = POP_TOP
+  lastargument = None
+
+>>> decompilation stack info:
+
+1c1
+< while 0 > 1: pass
+---
+> # --== Decompile ==--
+___ 79.py ___
+>>> Decompilation broken:
+>>> exception: list index out of range
+>>> stack trace: 
+  File "/media/knowledge/ntfs/development/dev/unpyc/unpyc/current/UnPycLib/Decompile.py", line 237, in codeDecompile
+    stack.append(stack[-1])
+>>> decompilation state info:
+  co.name = <module>
+  lastoffset = 00000010
+  lastcommand = DUP_TOP
+  lastargument = None
+
+>>> decompilation stack info:
+
+1,6c1
+< try:
+<         a = 1
+< except ValueError:
+<         a = 2
+< finally:
+<         a = 3
+---
+> # --== Decompile ==--
+___ 7A.py ___
+>>> Decompilation broken:
+>>> exception: list index out of range
+>>> stack trace: 
+  File "/media/knowledge/ntfs/development/dev/unpyc/unpyc/current/UnPycLib/Decompile.py", line 237, in codeDecompile
+    stack.append(stack[-1])
+>>> decompilation state info:
+  co.name = <module>
+  lastoffset = 00000010
+  lastcommand = DUP_TOP
+  lastargument = None
+
+>>> decompilation stack info:
+
+1,6c1
+< try:
+<         a = 1
+< except ValueError:
+<         a = 2
+< finally:
+<         a = 3
+---
+> # --== Decompile ==--
+___ 7C.py ___
+___ 7D.py ___
+___ 7E.py ___
+___ 82.py ___
+___ 83.py ___
+___ 84.py ___
+___ 85.py ___
+___ 86.py ___
+___ 87.py ___
+___ 88.py ___
+___ 89.py ___
+___ 8C.py ___
+___ 8D.py ___
+1,2c1,5
+< def f(a,b): pass
+< a = {"a":1,"b":2}
+---
+> # --== Decompile ==--
+> def f(a, b):
+> 	pass
+> 
+> a = {'b': 2, 'a': 1}
+3a7
+> 
+___ 8E.py ___
+1,2c1,5
+< def f(a,b,c): pass
+< a = {"b":1,"c":2}
+---
+> # --== Decompile ==--
+> def f(a, b, c):
+> 	pass
+> 
+> a = {'c': 2, 'b': 1}
+4a8
+> 
+___ exec.py ___
+___ fcalls.py ___
+1c1,2
+< def f(a, b, c, d=4, e=5):
+---
+> # --== Decompile ==--
+> def f(a, b, c, d = 4, e = 5):
+7c8
+< 	print "-------------"
+---
+> 	print '-------------'
+11c12
+< f(1, 2, 3, e=5, d=4)
+---
+> f(1, 2, 3, e = 5, d = 4)
+15,16c16,17
+< f(1, 2, e=5, *a2)
+< b1 = {"c": 3, "d":4, "e":5}
+---
+> f(1, 2, e = 5, *a2)
+> b1 = {'d': 4, 'e': 5, 'c': 3}
+18c19
+< b2 = {"d":4, "e":5}
+---
+> b2 = {'e': 5, 'd': 4}
+20a22
+> 
+___ prints.py ___
+0a1
+> # --== Decompile ==--
+3,4c4,6
+< print >> sys.stdout, "qqq"
+< print >> sys.stdout, "qqq",
+---
+> print >> sys.stdout, 'qqq'
+> print >> sys.stdout, 'qqq',
+> sys.stdout
+6,7c8,10
+< print "asdf"
+< print "qwer",
+---
+> print 'asdf'
+> print 'qwer',
+> 
+___ raise.py ___
+___ slices.py ___
+___ Statistics ___
+OK(85): 01.py, 04.py, 05.py, 0A.py, 0B.py, 0C.py, 0D.py, 0F.py, 13.py, 14.py, 15.py, 16.py, 17.py, 18.py, 19.py, 1A.py, 1B.py, 1C.py, 1D.py, 1E.py, 1F.py, 20.py, 21.py, 28.py, 29.py, 2A.py, 2B.py, 32.py, 33.py, 34.py, 35.py, 37.py, 38.py, 39.py, 3A.py, 3B.py, 3C.py, 3D.py, 3E.py, 3F.py, 40.py, 41.py, 42.py, 43.py, 47.py, 48.py, 4A.py, 4B.py, 4C.py, 4D.py, 4E.py, 4F.py, 52.py, 53.py, 54.py, 55.py, 56.py, 59.py, 5A.py, 5B.py, 5F.py, 60.py, 64.py, 65.py, 66.py, 67.py, 69.py, 6A.py, 6B.py, 6C.py, 7C.py, 7D.py, 7E.py, 82.py, 83.py, 84.py, 85.py, 86.py, 87.py, 88.py, 89.py, 8C.py, exec.py, raise.py, slices.py
+FAILED(28): 02.py, 03.py, 12.py, 44.py, 49.py, 50.py, 51.py, 57.py, 58.py, 5C.py, 5D.py, 61.py, 62.py, 63.py, 68.py, 6E.py, 6F.py, 70.py, 71.py, 74.py, 77.py, 78.py, 79.py, 7A.py, 8D.py, 8E.py, fcalls.py, prints.py
+
+
+
+

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+case "$1" in
+	configure)
+		dir=`pwd`
+		cd /usr/lib/UnPyc
+		python setup.py install
+		python setup.py clean
+		cd $dir
+	;;
+
+	abort-upgrade|abort-remove|abort-deconfigure)
+
+	;;
+
+	*)
+		echo "postinst called with unknown argument \`$1'" >&2
+		exit 1
+	;;
+esac

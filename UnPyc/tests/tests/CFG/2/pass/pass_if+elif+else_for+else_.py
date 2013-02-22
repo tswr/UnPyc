@@ -1,0 +1,14 @@
+for i in range(3):
+	if 1:
+		pass
+	elif 1:
+		pass
+	else:
+		pass
+else:
+	if 1:
+		pass
+	elif 1:
+		pass
+	else:
+		pass

@@ -1,0 +1,263 @@
+___ 01.py ___
+___ 02.py ___
+___ 03.py ___
+___ 04.py ___
+___ 05.py ___
+___ 0A.py ___
+___ 0B.py ___
+___ 0C.py ___
+___ 0D.py ___
+___ 0F.py ___
+___ 12.py ___
+1c1
+< a = [i*i for i in (1,2)]
+---
+> >>> Fatal error: could not structure control flow graph.
+___ 13.py ___
+___ 14.py ___
+___ 15.py ___
+___ 16.py ___
+___ 17.py ___
+___ 18.py ___
+___ 19.py ___
+___ 1A.py ___
+___ 1B.py ___
+___ 1C.py ___
+___ 1D.py ___
+___ 1E.py ___
+___ 1F.py ___
+___ 20.py ___
+___ 21.py ___
+___ 28.py ___
+___ 29.py ___
+___ 2A.py ___
+___ 2B.py ___
+___ 32.py ___
+___ 33.py ___
+___ 34.py ___
+___ 35.py ___
+___ 37.py ___
+___ 38.py ___
+___ 39.py ___
+___ 3A.py ___
+___ 3B.py ___
+___ 3C.py ___
+___ 3D.py ___
+___ 3E.py ___
+___ 3F.py ___
+___ 40.py ___
+___ 41.py ___
+___ 42.py ___
+___ 43.py ___
+___ 44.py ___
+___ 47.py ___
+___ 48.py ___
+___ 49.py ___
+0a1
+> # --== Decompile ==--
+3c4
+< sys.stdout
+---
+> 
+___ 4A.py ___
+___ 4B.py ___
+___ 4C.py ___
+___ 4D.py ___
+___ 4E.py ___
+___ 4F.py ___
+___ 50.py ___
+___ 51.py ___
+2,4c2,8
+< 
+< with open("1.txt") as f:
+<         print f.read()
+---
+> (_[1], _[2]) = (open('1.txt').__exit__, open('1.txt').__enter__())
+> try:
+> 	del _[2]
+> 	f = _[2]
+> 	print f.read()
+> finally:
+> 	del _[1]
+___ 52.py ___
+___ 53.py ___
+___ 54.py ___
+___ 55.py ___
+___ 56.py ___
+___ 57.py ___
+___ 58.py ___
+___ 59.py ___
+___ 5A.py ___
+___ 5B.py ___
+___ 5C.py ___
+>>> Decompilation broken:
+>>> exception: list index out of range
+>>> stack trace: 
+  File "/usr/local/lib/python2.6/dist-packages/UnPycLib/Decompile.py", line 429, in codeDecompile
+    r += self.STORE(self.co.names.value[cmd.argument].value, stack[-1], currentIndent, self.checkStack(stack, 1))
+>>> decompilation state info:
+  co.name = <module>
+  lastoffset = 00000009
+  lastcommand = STORE_NAME
+  lastargument = 1
+
+>>> decompilation stack info:
+
+1c1,3
+< (a, b) = "ab"
+---
+> a = 'ab'
+> 
+> ------
+___ 5D.py ___
+___ 5F.py ___
+___ 60.py ___
+___ 61.py ___
+1,2c1
+< global a
+< a = 1
+---
+> 
+___ 62.py ___
+1,2c1
+< global a
+< del a
+---
+> 
+___ 63.py ___
+___ 64.py ___
+___ 65.py ___
+___ 66.py ___
+___ 67.py ___
+___ 68.py ___
+___ 69.py ___
+___ 6A.py ___
+___ 6B.py ___
+___ 6C.py ___
+___ 6E.py ___
+___ 6F.py ___
+___ 70.py ___
+___ 71.py ___
+___ 74.py ___
+1,3c1
+< global a
+< a = 1
+< a = a
+---
+> 
+___ 77.py ___
+1,5c1
+< for x in (1,2):
+< 	try:
+< 		continue
+<         except:
+< 		pass
+---
+> >>> Fatal error: could not structure control flow graph.
+___ 78.py ___
+___ 79.py ___
+___ 7A.py ___
+___ 7C.py ___
+___ 7D.py ___
+___ 7E.py ___
+___ 82.py ___
+___ 83.py ___
+___ 84.py ___
+___ 85.py ___
+___ 86.py ___
+___ 87.py ___
+___ 88.py ___
+___ 89.py ___
+___ 8C.py ___
+___ 8D.py ___
+___ 8E.py ___
+___ complex_if1.py ___
+___ complex_if2.py ___
+___ complex_if3.py ___
+___ complex_if4.py ___
+___ compound_if.py ___
+___ elif.py ___
+3,6d2
+< elif a == 2:
+< 	print 2
+< elif a == 3:
+< 	print 3
+8c4,10
+< 	print 4
+---
+> 	if a == 2:
+> 		print 2
+> 	else:
+> 		if a == 3:
+> 			print 3
+> 		else:
+> 			print 4
+___ exec.py ___
+___ fcalls.py ___
+___ for+cond.py ___
+1,2c1
+< for a in A and B:
+< 	print a
+---
+> >>> Fatal error: could not structure control flow graph.
+___ for+cont1.py ___
+___ for+else+cont.py ___
+___ for+else1.py ___
+___ for1.py ___
+___ for2.py ___
+___ for3.py ___
+___ for4.py ___
+___ for5.py ___
+1c1
+< print (i*i for i in (1,2,3))
+---
+> print <genexpr>((1, 2, 3))
+___ for6.py ___
+___ if+def+class.py ___
+___ if1.py ___
+1a2
+> 	a
+2a4,5
+> else:
+> 	a
+___ prints.py ___
+3,4c3,5
+< print >> sys.stdout, "qqq"
+< print >> sys.stdout, "qqq",
+---
+> print >> sys.stdout, 'qqq'
+> print >> sys.stdout, 'qqq',
+> sys.stdout
+6,7c7,8
+< print "asdf"
+< print "qwer",
+---
+> print 'asdf'
+> print 'qwer',
+___ raise.py ___
+___ slices.py ___
+___ store+inplace.py ___
+___ try+ex1.py ___
+___ try+ex10.py ___
+___ try+ex11.py ___
+___ try+ex12.py ___
+6,7d5
+< except:
+< 	pass
+___ try+ex2.py ___
+___ try+ex3.py ___
+___ try+ex4.py ___
+___ try+ex5.py ___
+___ try+ex6.py ___
+___ try+ex7.py ___
+___ try+ex8.py ___
+___ try+ex9.py ___
+___ while+cont1.py ___
+___ while+else+cont.py ___
+___ while+else.py ___
+___ while1.py ___
+___ while2.py ___
+___ while3.py ___
+___ Statistics ___
+OK(136): 01.py, 02.py, 03.py, 04.py, 05.py, 0A.py, 0B.py, 0C.py, 0D.py, 0F.py, 13.py, 14.py, 15.py, 16.py, 17.py, 18.py, 19.py, 1A.py, 1B.py, 1C.py, 1D.py, 1E.py, 1F.py, 20.py, 21.py, 28.py, 29.py, 2A.py, 2B.py, 32.py, 33.py, 34.py, 35.py, 37.py, 38.py, 39.py, 3A.py, 3B.py, 3C.py, 3D.py, 3E.py, 3F.py, 40.py, 41.py, 42.py, 43.py, 44.py, 47.py, 48.py, 4A.py, 4B.py, 4C.py, 4D.py, 4E.py, 4F.py, 50.py, 52.py, 53.py, 54.py, 55.py, 56.py, 57.py, 58.py, 59.py, 5A.py, 5B.py, 5D.py, 5F.py, 60.py, 63.py, 64.py, 65.py, 66.py, 67.py, 68.py, 69.py, 6A.py, 6B.py, 6C.py, 6E.py, 6F.py, 70.py, 71.py, 78.py, 79.py, 7A.py, 7C.py, 7D.py, 7E.py, 82.py, 83.py, 84.py, 85.py, 86.py, 87.py, 88.py, 89.py, 8C.py, 8D.py, 8E.py, complex_if1.py, complex_if2.py, complex_if3.py, complex_if4.py, compound_if.py, exec.py, fcalls.py, for+cont1.py, for+else+cont.py, for+else1.py, for1.py, for2.py, for3.py, for4.py, for6.py, if+def+class.py, raise.py, slices.py, store+inplace.py, try+ex1.py, try+ex10.py, try+ex11.py, try+ex2.py, try+ex3.py, try+ex4.py, try+ex5.py, try+ex6.py, try+ex7.py, try+ex8.py, try+ex9.py, while+cont1.py, while+else+cont.py, while+else.py, while1.py, while2.py, while3.py
+FAILED(14): 12.py, 49.py, 51.py, 5C.py, 61.py, 62.py, 74.py, 77.py, elif.py, for+cond.py, for5.py, if1.py, prints.py, try+ex12.py

@@ -1,0 +1,258 @@
+___ 01.py ___
+___ 02.py ___
+___ 03.py ___
+___ 04.py ___
+___ 05.py ___
+___ 0A.py ___
+___ 0B.py ___
+___ 0C.py ___
+___ 0D.py ___
+___ 0F.py ___
+___ 12.py ___
+Traceback (most recent call last):
+  File "/usr/bin/UnPyc", line 36, in <module>
+    unpyclib.application.start()
+  File "/usr/local/lib/python2.6/dist-packages/unpyclib/application.py", line 261, in start
+    decompileStr = decompiler.decompile()
+  File "/usr/local/lib/python2.6/dist-packages/unpyclib/decompile.py", line 1149, in decompile
+    raise StructuringErrorException()
+unpyclib.decompile.StructuringErrorException: >>> Could not structure control flow graph.
+___ 13.py ___
+___ 14.py ___
+___ 15.py ___
+___ 16.py ___
+___ 17.py ___
+___ 18.py ___
+___ 19.py ___
+___ 1A.py ___
+___ 1B.py ___
+___ 1C.py ___
+___ 1D.py ___
+___ 1E.py ___
+___ 1F.py ___
+___ 20.py ___
+___ 21.py ___
+___ 28.py ___
+___ 29.py ___
+___ 2A.py ___
+___ 2B.py ___
+___ 32.py ___
+___ 33.py ___
+___ 34.py ___
+___ 35.py ___
+___ 37.py ___
+___ 38.py ___
+___ 39.py ___
+___ 3A.py ___
+___ 3B.py ___
+___ 3C.py ___
+___ 3D.py ___
+___ 3E.py ___
+___ 3F.py ___
+___ 40.py ___
+___ 41.py ___
+___ 42.py ___
+___ 43.py ___
+___ 44.py ___
+___ 47.py ___
+___ 48.py ___
+___ 49.py ___
+# <module>.code(00000019 STR: 'd\x00\x00d\x01\x00k\x00\x00Z\x00\x00e\x00\x00i\x01\x00\x04d\x02\x00\x02I\x01d\x01\x00S' (1D 00 00 00 64 00 00 64 01 00 6B 00...)) != <module>.code(00000019 STR: 'd\x00\x00d\x01\x00k\x00\x00Z\x00\x00e\x00\x00i\x01\x00\x04d\x02\x00\x02I\x01e\x00\x00i\x01\x00\x01d\x01\x00...' (24 00 00 00 64 00 00 64 01 00 6B 00...))
+
+___ 4A.py ___
+___ 4B.py ___
+___ 4C.py ___
+___ 4D.py ___
+___ 4E.py ___
+___ 4F.py ___
+___ 50.py ___
+___ 51.py ___
+# <module>.code(00000019 STR: 'd\x00\x00d\x01\x00k\x00\x00l\x01\x00Z\x01\x00\x01e\x02\x00d\x02\x00\x83\x01\x00\x04i\x03\x00\x02i\x04\x00\x83\x00...' (48 00 00 00 64 00 00 64 01 00 6B 00...)) != <module>.code(00000019 STR: 'd\x00\x00d\x01\x00k\x00\x00l\x01\x00Z\x01\x00\x01z\x16\x00e\x02\x00d\x02\x00=e\x03\x00i\x04\x00\x83\x00\x00...' (2E 00 00 00 64 00 00 64 01 00 6B 00...))
+# <module>.consts(00000066 TUPLE: (
+0000006B     INT: -1 (FF FF FF FF),
+00000070     TUPLE: (
+00000075         STR: 'with_statement' (0E 00 00 00 77 69 74 68 5F 73 74 61...)
+             ),
+00000088     STR: '1.txt' (05 00 00 00 31 2E 74 78 74),
+00000092     None (4E)
+         )) != <module>.consts(0000004C TUPLE: (
+00000051     INT: -1 (FF FF FF FF),
+00000056     TUPLE: (
+0000005B         STR: 'with_statement' (0E 00 00 00 77 69 74 68 5F 73 74 61...)
+             ),
+0000006E     INT: 1 (01 00 00 00),
+00000073     None (4E)
+         ))
+# <module>.names(00000093 TUPLE: (
+00000098     STR: '__future__' (0A 00 00 00 5F 5F 66 75 74 75 72 65...),
+000000A7     STR: 'with_statement' (00 00 00 00),
+000000AC     STR: 'open' (04 00 00 00 6F 70 65 6E),
+000000B5     STR: '__exit__' (08 00 00 00 5F 5F 65 78 69 74 5F 5F),
+000000C2     STR: '__enter__' (09 00 00 00 5F 5F 65 6E 74 65 72 5F...),
+000000D0     STR: '_[1]' (04 00 00 00 5F 5B 31 5D),
+000000D9     STR: 'f' (01 00 00 00 66),
+000000DF     STR: 'read' (04 00 00 00 72 65 61 64)
+         )) != <module>.names(00000074 TUPLE: (
+00000079     STR: '__future__' (0A 00 00 00 5F 5F 66 75 74 75 72 65...),
+00000088     STR: 'with_statement' (00 00 00 00),
+0000008D     STR: '_' (01 00 00 00 5F),
+00000093     STR: 'f' (01 00 00 00 66),
+00000099     STR: 'read' (04 00 00 00 72 65 61 64)
+         ))
+
+___ 52.py ___
+___ 53.py ___
+___ 54.py ___
+___ 55.py ___
+___ 56.py ___
+___ 57.py ___
+___ 58.py ___
+___ 59.py ___
+___ 5A.py ___
+___ 5B.py ___
+___ 5C.py ___
+___ 5D.py ___
+___ 5F.py ___
+___ 60.py ___
+___ 61.py ___
+# <module>.code(00000019 STR: 'd\x00\x00a\x00\x00d\x01\x00S' (0A 00 00 00 64 00 00 61 00 00 64 01...)) != <module>.code(00000019 STR: 'd\x00\x00S' (04 00 00 00 64 00 00 53))
+# <module>.consts(00000028 TUPLE: (
+0000002D     INT: 1 (01 00 00 00),
+00000032     None (4E)
+         )) != <module>.consts(00000022 TUPLE: (
+00000027     None (4E)
+         ))
+# <module>.names(00000033 TUPLE: (
+00000038     STR: 'a' (01 00 00 00 61)
+         )) != <module>.names(00000028 TUPLE: ())
+
+___ 62.py ___
+# <module>.code(00000019 STR: 'b\x00\x00d\x00\x00S' (07 00 00 00 62 00 00 64 00 00 53)) != <module>.code(00000019 STR: 'd\x00\x00S' (04 00 00 00 64 00 00 53))
+# <module>.names(0000002B TUPLE: (
+00000030     STR: 'a' (01 00 00 00 61)
+         )) != <module>.names(00000028 TUPLE: ())
+
+___ 63.py ___
+___ 64.py ___
+___ 65.py ___
+___ 66.py ___
+___ 67.py ___
+___ 68.py ___
+___ 69.py ___
+___ 6A.py ___
+___ 6B.py ___
+___ 6C.py ___
+___ 6E.py ___
+___ 6F.py ___
+___ 70.py ___
+___ 71.py ___
+___ 74.py ___
+# <module>.code(00000019 STR: 'd\x00\x00a\x00\x00t\x00\x00a\x00\x00d\x01\x00S' (10 00 00 00 64 00 00 61 00 00 74 00...)) != <module>.code(00000019 STR: 'd\x00\x00S' (04 00 00 00 64 00 00 53))
+# <module>.consts(0000002E TUPLE: (
+00000033     INT: 1 (01 00 00 00),
+00000038     None (4E)
+         )) != <module>.consts(00000022 TUPLE: (
+00000027     None (4E)
+         ))
+# <module>.names(00000039 TUPLE: (
+0000003E     STR: 'a' (01 00 00 00 61)
+         )) != <module>.names(00000028 TUPLE: ())
+
+___ 77.py ___
+Traceback (most recent call last):
+  File "/usr/bin/UnPyc", line 36, in <module>
+    unpyclib.application.start()
+  File "/usr/local/lib/python2.6/dist-packages/unpyclib/application.py", line 261, in start
+    decompileStr = decompiler.decompile()
+  File "/usr/local/lib/python2.6/dist-packages/unpyclib/decompile.py", line 1149, in decompile
+    raise StructuringErrorException()
+unpyclib.decompile.StructuringErrorException: >>> Could not structure control flow graph.
+___ 78.py ___
+___ 79.py ___
+___ 7A.py ___
+___ 7C.py ___
+___ 7D.py ___
+___ 7E.py ___
+___ 82.py ___
+___ 83.py ___
+___ 84.py ___
+___ 85.py ___
+___ 86.py ___
+___ 87.py ___
+___ 88.py ___
+___ 89.py ___
+___ 8C.py ___
+___ 8D.py ___
+___ 8E.py ___
+___ closure.py ___
+___ complex_if1.py ___
+___ complex_if2.py ___
+___ complex_if3.py ___
+# <module>.code(00000019 STR: 'e\x00\x00d\x00\x00j\x02\x00p\n\x00\x01e\x01\x00d\x01\x00j\x02\x00\x0co\x17\x00\x01e\x02\x00d\x02\x00j\x02...' (3C 00 00 00 65 00 00 64 00 00 6A 02...)) != <module>.code(00000019 STR: 'e\x00\x00d\x00\x00j\x02\x00\x0co%\x00\x01e\x01\x00d\x01\x00j\x02\x00\x0co\x17\x00\x01e\x02\x00d\x02\x00j...' (3D 00 00 00 65 00 00 64 00 00 6A 02...))
+
+___ complex_if4.py ___
+# <module>.code(00000019 STR: 'e\x00\x00d\x00\x00j\x02\x00o\r\x00\x01e\x01\x00d\x01\x00j\x02\x00p3\x00\x01e\x02\x00d\x02\x00j\x02\x00...' (64 00 00 00 65 00 00 64 00 00 6A 02...)) != <module>.code(00000019 STR: 'e\x00\x00d\x00\x00j\x02\x00o\r\x00\x01e\x01\x00d\x01\x00j\x02\x00p5\x00\x01e\x02\x00d\x02\x00j\x02\x00...' (66 00 00 00 65 00 00 64 00 00 6A 02...))
+
+___ compound_if.py ___
+___ elif.py ___
+___ exec.py ___
+___ fcalls.py ___
+___ for+cond.py ___
+Traceback (most recent call last):
+  File "/usr/bin/UnPyc", line 36, in <module>
+    unpyclib.application.start()
+  File "/usr/local/lib/python2.6/dist-packages/unpyclib/application.py", line 261, in start
+    decompileStr = decompiler.decompile()
+  File "/usr/local/lib/python2.6/dist-packages/unpyclib/decompile.py", line 1149, in decompile
+    raise StructuringErrorException()
+unpyclib.decompile.StructuringErrorException: >>> Could not structure control flow graph.
+___ for+cont1.py ___
+___ for+else+cont.py ___
+___ for+else1.py ___
+# <module>.code(00000019 STR: 'xD\x00e\x00\x00D]\x1c\x00Z\x01\x00e\x01\x00d\x00\x00j\x04\x00o\t\x00\x01d\x00\x00GHq\x07\x00\x01...' (4B 00 00 00 78 44 00 65 00 00 44 5D...)) != <module>.code(00000019 STR: 'xG\x00e\x00\x00D]\x1f\x00Z\x01\x00e\x01\x00d\x00\x00j\x04\x00o\x0c\x00\x01d\x00\x00GHq\x07\x00q...' (4E 00 00 00 78 47 00 65 00 00 44 5D...))
+
+___ for1.py ___
+___ for2.py ___
+___ for3.py ___
+___ for4.py ___
+# <module>.code(00000019 STR: 'x9\x00e\x00\x00D]1\x00Z\x01\x00e\x02\x00d\x00\x00j\x02\x00o\x1e\x00\x01x\x16\x00e\x03\x00D]\x0e...' (40 00 00 00 78 39 00 65 00 00 44 5D...)) != <module>.code(00000019 STR: 'x<\x00e\x00\x00D]4\x00Z\x01\x00e\x02\x00d\x00\x00j\x02\x00o!\x00\x01x\x16\x00e\x03\x00D]\x0e...' (43 00 00 00 78 3C 00 65 00 00 44 5D...))
+
+___ for5.py ___
+___ for6.py ___
+___ if+def+class.py ___
+___ if1.py ___
+# <module>.code(00000019 STR: 'e\x00\x00o\t\x00\x01d\x00\x00GHn\x01\x00\x01d\x01\x00S' (14 00 00 00 65 00 00 6F 09 00 01 64...)) != <module>.code(00000019 STR: 'e\x00\x00o\r\x00\x01e\x00\x00\x01d\x00\x00GHn\x05\x00\x01e\x00\x00\x01d\x01\x00S' (1C 00 00 00 65 00 00 6F 0D 00 01 65...))
+
+___ prints.py ___
+# <module>.code(00000019 STR: 'd\x00\x00d\x01\x00k\x00\x00Z\x00\x00e\x00\x00i\x01\x00Je\x00\x00i\x01\x00\x04d\x02\x00\x02IJe\x00\x00...' (3B 00 00 00 64 00 00 64 01 00 6B 00...)) != <module>.code(00000019 STR: 'd\x00\x00d\x01\x00k\x00\x00Z\x00\x00e\x00\x00i\x01\x00Je\x00\x00i\x01\x00\x04d\x02\x00\x02IJe\x00\x00...' (42 00 00 00 64 00 00 64 01 00 6B 00...))
+
+___ raise.py ___
+___ slices.py ___
+___ store+inplace.py ___
+___ try+ex1.py ___
+___ try+ex10.py ___
+___ try+ex11.py ___
+___ try+ex12.py ___
+# <module>.code(00000019 STR: 'e\x00\x00\x83\x00\x00\x01z$\x00y\x04\x00Wn\x19\x00\x04e\x01\x00j\n\x00o\x07\x00\x01\x01\x01\x01n\x08\x00\x01...' (3A 00 00 00 65 00 00 83 00 00 01 7A...)) != <module>.code(00000019 STR: 'e\x00\x00\x83\x00\x00\x01z\x1e\x00y\x04\x00Wn\x13\x00\x04e\x01\x00j\n\x00o\x07\x00\x01\x01\x01\x01n\x02\x00\x01...' (34 00 00 00 65 00 00 83 00 00 01 7A...))
+
+___ try+ex2.py ___
+___ try+ex3.py ___
+___ try+ex4.py ___
+___ try+ex5.py ___
+___ try+ex6.py ___
+___ try+ex7.py ___
+___ try+ex8.py ___
+___ try+ex9.py ___
+___ while+cont1.py ___
+# <module>.code(00000019 STR: 'x0\x00e\x00\x00d\x00\x00j\x04\x00o"\x00\x01e\x01\x00d\x00\x00j\x04\x00o\x0c\x00\x01e\x02\x00GHq...' (37 00 00 00 78 30 00 65 00 00 64 00...)) != <module>.code(00000019 STR: 'x3\x00e\x00\x00d\x00\x00j\x04\x00o%\x00\x01e\x01\x00d\x00\x00j\x04\x00o\x0f\x00\x01e\x02\x00GHq...' (3A 00 00 00 78 33 00 65 00 00 64 00...))
+
+___ while+else+cont.py ___
+___ while+else.py ___
+___ while1.py ___
+___ while2.py ___
+___ while3.py ___
+# <module>.code(00000019 STR: 'x(\x00e\x00\x00d\x00\x00j\x02\x00o\x1a\x00\x01e\x01\x00d\x01\x00j\x02\x00o\t\x00\x01d\x00\x00GHq...' (2F 00 00 00 78 28 00 65 00 00 64 00...)) != <module>.code(00000019 STR: 'x+\x00e\x00\x00d\x00\x00j\x02\x00o\x1d\x00\x01e\x01\x00d\x01\x00j\x02\x00o\x0c\x00\x01d\x00\x00GHq...' (32 00 00 00 78 2B 00 65 00 00 64 00...))
+
+___ Statistics ___
+OK(133): 01.py, 02.py, 03.py, 04.py, 05.py, 0A.py, 0B.py, 0C.py, 0D.py, 0F.py, 13.py, 14.py, 15.py, 16.py, 17.py, 18.py, 19.py, 1A.py, 1B.py, 1C.py, 1D.py, 1E.py, 1F.py, 20.py, 21.py, 28.py, 29.py, 2A.py, 2B.py, 32.py, 33.py, 34.py, 35.py, 37.py, 38.py, 39.py, 3A.py, 3B.py, 3C.py, 3D.py, 3E.py, 3F.py, 40.py, 41.py, 42.py, 43.py, 44.py, 47.py, 48.py, 4A.py, 4B.py, 4C.py, 4D.py, 4E.py, 4F.py, 50.py, 52.py, 53.py, 54.py, 55.py, 56.py, 57.py, 58.py, 59.py, 5A.py, 5B.py, 5C.py, 5D.py, 5F.py, 60.py, 63.py, 64.py, 65.py, 66.py, 67.py, 68.py, 69.py, 6A.py, 6B.py, 6C.py, 6E.py, 6F.py, 70.py, 71.py, 78.py, 79.py, 7A.py, 7C.py, 7D.py, 7E.py, 82.py, 83.py, 84.py, 85.py, 86.py, 87.py, 88.py, 89.py, 8C.py, 8D.py, 8E.py, closure.py, complex_if1.py, complex_if2.py, compound_if.py, elif.py, exec.py, fcalls.py, for+cont1.py, for+else+cont.py, for1.py, for2.py, for3.py, for6.py, if+def+class.py, raise.py, slices.py, store+inplace.py, try+ex1.py, try+ex10.py, try+ex11.py, try+ex2.py, try+ex3.py, try+ex4.py, try+ex5.py, try+ex6.py, try+ex7.py, try+ex8.py, try+ex9.py, while+else+cont.py, while+else.py, while1.py, while2.py
+FAILED(18): 12.py, 49.py, 51.py, 61.py, 62.py, 74.py, 77.py, complex_if3.py, complex_if4.py, for+cond.py, for+else1.py, for4.py, for5.py, if1.py, prints.py, try+ex12.py, while+cont1.py, while3.py

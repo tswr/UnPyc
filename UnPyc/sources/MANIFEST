@@ -1,0 +1,11 @@
+setup.py
+unpyclib/__init__.py
+unpyclib/application.py
+unpyclib/ast.py
+unpyclib/decompile.py
+unpyclib/disasm.py
+unpyclib/gui.py
+unpyclib/opcodes.py
+unpyclib/parse.py
+unpyclib/structure.py
+unpyclib/text.py

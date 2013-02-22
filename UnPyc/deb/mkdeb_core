@@ -1,0 +1,51 @@
+#!/bin/bash
+
+name=unpyc_0.8.2_all
+tmp=/tmp
+dir=$tmp/$name
+cdir=`pwd`
+
+bindir=/usr/bin
+libdir=/usr/lib/UnPyc
+docdir=/usr/share/doc/unpyc
+mandir=/usr/share/man/man1
+
+mkdir -pv $dir/DEBIAN
+cp -rv DEBIAN $dir
+
+mkdir -pv $dir/$bindir
+cp -v ../sources/UnPyc $dir/$bindir
+
+mkdir -pv $dir/$libdir/unpyclib
+cp -rv ../sources/unpyclib/*.py $dir/$libdir/unpyclib
+cp -v ../sources/setup.py $dir/$libdir
+
+mkdir -pv $dir/$docdir
+cp -v ../doc/info/copyright ../doc/info/changelog.gz ../doc/info/README $dir/$docdir
+
+cd ../doc/
+cd $cdir
+cp -rv ../doc/html $dir/$docdir
+
+mkdir -pv $dir/$mandir
+cp ../doc/man/UnPyc.1.gz $dir/$mandir
+
+find $dir -type d -exec chmod 0755 {} \; 
+find $dir -type f -exec chmod 0644 {} \; 
+
+chmod 0755 $dir/DEBIAN/postinst
+chmod 0755 $dir/$bindir/UnPyc
+
+chown -R root:root $dir
+
+cd $dir/
+rm -rf DEBIAN/.svn usr/share/doc/unpyc/html/.svn
+find usr/ -type f -exec md5sum '{}' \; > $dir/DEBIAN/md5sums
+
+cd $tmp
+dpkg-deb -b $name
+cd $cdir
+cp -v $tmp/$name.deb .
+ln -s $name.deb unpyc_last.deb
+
+rm -rf $dir

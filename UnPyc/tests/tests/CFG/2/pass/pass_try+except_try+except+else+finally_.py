@@ -1,0 +1,20 @@
+try:
+	try:
+		pass
+	except:
+		pass
+except:
+	try:
+		pass
+	except:
+		pass
+else:
+	try:
+		pass
+	except:
+		pass
+finally:
+	try:
+		pass
+	except:
+		pass

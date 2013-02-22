@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>unpyclib.disasm.Disassembler</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="unpyclib-module.html">Package&nbsp;unpyclib</a> ::
+        <a href="unpyclib.disasm-module.html">Module&nbsp;disasm</a> ::
+        Class&nbsp;Disassembler
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="unpyclib.disasm.Disassembler-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Disassembler</h1><p class="nomargin-top"><span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler">source&nbsp;code</a></span></p>
+<p>Disassembler itself.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="unpyclib.disasm.Disassembler-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">co</span>,
+        <span class="summary-sig-arg">optimizeJumps</span>=<span class="summary-sig-default">False</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="unpyclib.disasm.Disassembler-class.html#optimizeJumps" class="summary-sig-name">optimizeJumps</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Optimizes conditional jumps.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.optimizeJumps">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="unpyclib.disasm.Disassembler-class.html#optimizeAbsoluteJumps" class="summary-sig-name">optimizeAbsoluteJumps</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Replaces JUMP_ABSOLUTE with CONTINUE_LOOP or NOP.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.optimizeAbsoluteJumps">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="unpyclib.disasm.Disassembler-class.html#getCommands" class="summary-sig-name">getCommands</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">offset</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">length</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Returns:
+      Commands object, which represents the given slice of co_code.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.getCommands">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="unpyclib.disasm.Disassembler-class.html#getAllCodeBlocks" class="summary-sig-name">getAllCodeBlocks</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">offset</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">length</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Builds basic blocks of current co_code.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.getAllCodeBlocks">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="unpyclib.disasm.Disassembler-class.html#getLoopCodeBlocks" class="summary-sig-name">getLoopCodeBlocks</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">offset</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">length</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Builds loop blocks of current co_code.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.getLoopCodeBlocks">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="unpyclib.disasm.Disassembler-class.html#getMoreInfo" class="summary-sig-name">getMoreInfo</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">cmd</span>,
+        <span class="summary-sig-arg">verbose</span>)</span><br />
+      Returns:
+      more disasm information for the given command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.getMoreInfo">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="unpyclib.disasm.Disassembler-class.html#codeDisasm" class="summary-sig-name">codeDisasm</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">offset</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">length</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">xref</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Makes the disassembler output.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.codeDisasm">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="disassemble"></a><span class="summary-sig-name">disassemble</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Wrapper that inits disassembly process.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.disassemble">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== STATIC METHODS ==================== -->
+<a name="section-StaticMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Static Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-StaticMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="unpyclib.disasm.Disassembler-class.html#disasmCommands" class="summary-sig-name">disasmCommands</a>(<span class="summary-sig-arg">co_code</span>,
+        <span class="summary-sig-arg">startOffset</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Returns:
+      <a href="unpyclib.disasm.Commands-class.html" 
+      class="link">Commands</a> for the specified co_code.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.disasmCommands">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">co</span>,
+        <span class="sig-arg">optimizeJumps</span>=<span class="sig-default">False</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>co</code></strong> - code object, that is going to be disassembled.</li>
+        <li><strong class="pname"><code>optimizeJumps</code></strong> - if true, disassembler does some bytecode optimization, see <a 
+          href="unpyclib.disasm.Disassembler-class.html#optimizeJumps" 
+          class="link">optimizeJumps</a> and <a 
+          href="unpyclib.disasm.Disassembler-class.html#optimizeAbsoluteJumps"
+          class="link">optimizeAbsoluteJumps</a> for more information.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="optimizeJumps"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">optimizeJumps</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.optimizeJumps">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Optimizes conditional jumps.</p>
+  <p>Replaces JUMP_IF_* -&gt; JUMP_IF_* -&gt; ... -&gt; TARGET with 
+  JUMP_IF_* -&gt; TARGET.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="optimizeAbsoluteJumps"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">optimizeAbsoluteJumps</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.optimizeAbsoluteJumps">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Replaces JUMP_ABSOLUTE with CONTINUE_LOOP or NOP.</p>
+  <p>If JUMP_ABSOLUTE is the last one in the byte code for the specified 
+  target, then replace it with NOP, otherwise replace with 
+  CONTINUE_LOOP.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="disasmCommands"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">disasmCommands</span>(<span class="sig-arg">co_code</span>,
+        <span class="sig-arg">startOffset</span>=<span class="sig-default">0</span>)</span>
+    <br /><em class="fname">Static Method</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.disasmCommands">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>co_code</code></strong> - bytecode.</li>
+        <li><strong class="pname"><code>startOffset</code></strong> - offset base.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><a href="unpyclib.disasm.Commands-class.html" 
+          class="link">Commands</a> for the specified co_code.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getCommands"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getCommands</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">offset</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">length</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.getCommands">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>offset</code></strong> - start offset in co_code.</li>
+        <li><strong class="pname"><code>length</code></strong> - length of the substring in co_code.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>Commands object, which represents the given slice of co_code.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getAllCodeBlocks"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getAllCodeBlocks</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">offset</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">length</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.getAllCodeBlocks">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Builds basic blocks of current co_code.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>offset</code></strong> - start offset in co_code.</li>
+        <li><strong class="pname"><code>length</code></strong> - length of the substring in co_code.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><a href="unpyclib.disasm.CodeBlocks-class.html" 
+          class="link">CodeBlocks</a> of the current code object.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getLoopCodeBlocks"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getLoopCodeBlocks</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">offset</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">length</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.getLoopCodeBlocks">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Builds loop blocks of current co_code.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>offset</code></strong> - start offset in co_code.</li>
+        <li><strong class="pname"><code>length</code></strong> - length of the substring in co_code.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><a href="unpyclib.disasm.CodeBlocks-class.html" 
+          class="link">CodeBlocks</a> of current code object.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getMoreInfo"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getMoreInfo</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">cmd</span>,
+        <span class="sig-arg">verbose</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.getMoreInfo">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>cmd</code></strong> - <a href="unpyclib.disasm.Command-class.html" 
+          class="link">Command</a> on which to operate.</li>
+        <li><strong class="pname"><code>verbose</code></strong> - verbosity level.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>more disasm information for the given command.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="codeDisasm"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">codeDisasm</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">offset</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">length</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">verbose</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">xref</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="unpyclib.disasm-pysrc.html#Disassembler.codeDisasm">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Makes the disassembler output.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>offset</code></strong> - start offset in co_code.</li>
+        <li><strong class="pname"><code>length</code></strong> - length of the substring in co_code.</li>
+        <li><strong class="pname"><code>verbose</code></strong> - verbosity of the output (0, 1, 2)</li>
+        <li><strong class="pname"><code>xref</code></strong> - show back references from jumps and such.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>the disassembler output.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Jun 18 04:34:51 2009
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

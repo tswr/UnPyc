@@ -1,0 +1,14 @@
+Package: unpyc
+Source: unpyc-source
+Version: 0.8.2
+Section: python
+Priority: optional
+Architecture: all
+Depends: python (<< 2.7), python (>= 2.5), python-tk (>= 2.5)
+Recommends: libgv-python (>= 2.20), python-graph (>= 1.4), python-pydot (>= 1.0.2)
+Installed-Size: 4420
+Maintainer: Dmitri Kornev <tswr@tswr.ru>
+Homepage: http://unpyc.sourceforge.net/
+Description: A disassembler and decompiler for python-2.5 or 2.6
+ UnPyc is a disassembler and decompiler of *.pyc and *.pyo files,
+ compiled by python-2.5 or 2.6.

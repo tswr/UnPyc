@@ -1,0 +1,3 @@
+#!/bin/bash
+
+groff -Tascii -man UnPyc.1 | less

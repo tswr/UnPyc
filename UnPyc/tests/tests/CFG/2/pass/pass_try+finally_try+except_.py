@@ -1,0 +1,10 @@
+try:
+	try:
+		pass
+	finally:
+		pass
+except:
+	try:
+		pass
+	finally:
+		pass

@@ -1,0 +1,25 @@
+___ Analisys ___
+add scopes to support global:
+	61.py
+	62.py
+	74.py
+
+POP_TOP prints more than necessary:
+	49.py
+	prints.py
+
+support try/except/finally:
+	77.py
+
+support for loops:
+	continue from try/except:
+		77.py
+
+EXTENDED_ARG:
+	8F.py
+
+support list generators:
+	12.py
+
+support with statement:
+	51.py
